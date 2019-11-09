@@ -45,4 +45,11 @@ _/ ___\|  | \__  \  /  ___//  ___/  \   __\|  |/ __ \ / __ |/  ___/
     * In order to see unit test coverage open with browser: `target/site/jacoco-ut/index.html`
     * In order to see integration test coverage open with browser: `target/site/jacoco-it/index.html`
     
-    
+
+#### Dependencies Used:
+* Spring Boot Web with Undertow
+* Log4j2
+* Lombok
+* Jsoup (for html tags stripping)
+* Spring Boot Test
+* JsonAssert
