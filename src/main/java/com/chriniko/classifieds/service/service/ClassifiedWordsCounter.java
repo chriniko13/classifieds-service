@@ -94,12 +94,11 @@ public class ClassifiedWordsCounter {
         }, classified, "process");
     }
 
+    // Note: just a naive debug printing in order to test behaviour of regex rules.
     private void debug(String input, Map<String, Integer> matches) {
-
         List<String> notMatches = new LinkedList<>();
 
         for (String inputWord : input.split(" ")) {
-
             String w = inputWord.trim()
                     .replace("\uFEFF", "")
                     .replace(",", "")
@@ -108,9 +107,7 @@ public class ClassifiedWordsCounter {
             if (matches.get(w) == null) {
                 notMatches.add(inputWord);
             }
-
         }
-
         log.debug("input: " + input);
         log.debug("matches result: " + matches.entrySet());
         log.debug("notMatches founds: " + notMatches);
